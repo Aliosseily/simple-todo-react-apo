@@ -21,10 +21,13 @@ function App() {
   };
 
   return (
-    <div>
+    // u can use React.Fragment as wrapper for your component or use <> insread
+    // <React.Fragment>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} onDelete={deleteUserHandler} />
-    </div>
+    </>
+    //</React.Fragment>
   );
 }
 
