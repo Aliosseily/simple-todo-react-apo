@@ -24,7 +24,7 @@ const ModalOverlay = (props) => {
     </Card>
   );
 };
-
+//ReactDom.createPortal is used to render your html in other places
 const ErrorModal = (props) => {
   return <React.Fragment>
      {ReactDom.createPortal(<Backdrop onConfirm={props.onConfirm}/> , document.getElementById("backdrop-root"))}
